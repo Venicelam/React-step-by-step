@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  state = {number: this.props.app}
+  state = {number: 1}
   updateNumber = ()=> {
-    this.setState({number: this.props.app(this.state.number)})
+    this.setState({number: this.props.onClickApp(this.state.number)})
     alert('now you know how to handle onclick event')
   }
     render() {

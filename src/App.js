@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Number from './Component/Number.js';
 
 class App extends Component {
   state = {number: 1}
@@ -12,8 +13,7 @@ class App extends Component {
     return (
       <div>       
           <button onClick={this.updateNumber}>Hello World!</button>
-
-          <span>number: {this.state.number}</span>    
+          <Number/>   
       </div>
     );
   }
